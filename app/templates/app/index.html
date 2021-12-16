@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <div>Hello on this super Quizz. We have {{ nb_questions }} <a href="{% url 'question-list' %}">questions</a> in the database.</div>
+    <h2>Add a question</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ create_question_form.as_p }}
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Take a quiz</h2>
+    <a href="{% url "quiz-create" %}"><button>Create a quiz</button></a>
+
+{% endblock %}

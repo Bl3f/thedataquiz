@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Questions</h1>
+    <table>
+        <thead>
+        <tr>
+            <td>Question</td>
+            <td>Réponse A</td>
+            <td>Réponse B</td>
+            <td>Réponse C</td>
+            <td>Réponse D</td>
+            <td>Updated at</td>
+            <td>Opérations</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for question in object_list %}
+            <tr>
+                <td>{{ question.text }}</td>
+                <td class="{% if question.answer == 'a' %}correct{% endif %}">{{ question.a }}</td>
+                <td class="{% if question.answer == 'b' %}correct{% endif %}">{{ question.b }}</td>
+                <td class="{% if question.answer == 'c' %}correct{% endif %}">{{ question.c }}</td>
+                <td class="{% if question.answer == 'd' %}correct{% endif %}">{{ question.d }}</td>
+                <td>{{ question.updated_at }}</td>
+                <td><a href="{% url 'question-edit' question.pk %}">edit</a> - <a href="{% url 'question-delete' question.pk %}">delete</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <ul>
+    </ul>
+{% endblock %}

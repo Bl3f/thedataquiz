@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url "index" %}">Quizz</a>
+        <span>{{ user }}</span>
+        {% if user.is_authenticated %}
+            <span><a href="{% url "logout" %}">logout</a></span>
+        {% else %}
+            <span><a href="{% url "login" %}">login</a></span>
+            <span><a href="{% url "register" %}">register</a></span>
+        {% endif %}
+    </header>
+    <div>{% block content %}{% endblock %}</div>
+</body>
+</html>
