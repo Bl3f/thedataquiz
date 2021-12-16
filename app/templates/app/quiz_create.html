@@ -2,14 +2,11 @@
 
 {% block content %}
     <div>
+    <ul>
     {% for quiz in data %}
-        <div>
-            <h3><a href="{% url 'quiz-play' quiz.pk %}">Created the {{ quiz.started_at }} - size {{ quiz.size }}</a></h3>
-            {% for question in quiz.questions.all %}
-                {{ question.question.text }} |
-            {% endfor %}
-        </div>
+        <li><a href="{% url 'quiz-play' quiz.pk %}">Random — {{ quiz.size }} questions from {{ quiz.tag }}{% if quiz.completed %}— ✓{% endif %}</a></li>
     {% endfor %}
+    </ul>
     </div>
 
     <form method="post">{% csrf_token %}

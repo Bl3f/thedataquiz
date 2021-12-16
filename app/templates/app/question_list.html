@@ -22,7 +22,7 @@
                 <td class="{% if question.answer == 'b' %}correct{% endif %}">{{ question.b }}</td>
                 <td class="{% if question.answer == 'c' %}correct{% endif %}">{{ question.c }}</td>
                 <td class="{% if question.answer == 'd' %}correct{% endif %}">{{ question.d }}</td>
-                <td>{% for tag in question.tags.all %}{{ tag.slug }}{% endfor %}</td>
+                <td>{% for tag in question.tags.all %}{{ tag.slug }}{% if not forloop.last %},{% endif %}{% endfor %}</td>
                 <td><a href="{% url 'question-edit' question.pk %}">edit</a> - <a href="{% url 'question-delete' question.pk %}">delete</a></td>
             </tr>
         {% endfor %}

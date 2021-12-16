@@ -3,4 +3,9 @@
 {% block content %}
     <h1>You've finished a quiz</h1>
     <div>You got {{ score }}%</div>
+    <ul>
+        {% for question in quiz.questions.all %}
+            <li class="{% if question.is_correct %}correct{% else %}incorrect{% endif %}"><b>{{ question.question.text }}</b> — {{ question.user_answer }} ({{ question.question.a }})</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

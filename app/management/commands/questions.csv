@@ -1,6 +1,242 @@
 id,text,a,b,c,d,tags,question_type,answer
-1,What's France capital?,Paris,,,,world_capitals,cash,a
-2,What's Italy capital?,Rome,,,,world_capitals,cash,a
-3,What's Germany capital?,Berlin,,,,world_capitals,cash,a
-4,What's United Kingdom capital?,London,,,,world_capitals,cash,a
-5,What's Spain capital?,Madrid,,,,world_capitals,cash,a
+1,Somaliland,Hargeisa,,,,world_capitals,cash,a
+2,South Georgia and South Sandwich Islands,King Edward Point,,,,world_capitals,cash,a
+3,French Southern and Antarctic Lands,Port-aux-Français,,,,world_capitals,cash,a
+4,Palestine,Jerusalem,,,,world_capitals,cash,a
+5,Aland Islands,Mariehamn,,,,world_capitals,cash,a
+6,Nauru,Yaren,,,,world_capitals,cash,a
+7,Saint Martin,Marigot,,,,world_capitals,cash,a
+8,Tokelau,Atafu,,,,world_capitals,cash,a
+9,Western Sahara,El-Aaiún,,,,world_capitals,cash,a
+10,Afghanistan,Kabul,,,,world_capitals,cash,a
+11,Albania,Tirana,,,,world_capitals,cash,a
+12,Algeria,Algiers,,,,world_capitals,cash,a
+13,American Samoa,Pago Pago,,,,world_capitals,cash,a
+14,Andorra,Andorra la Vella,,,,world_capitals,cash,a
+15,Angola,Luanda,,,,world_capitals,cash,a
+16,Anguilla,The Valley,,,,world_capitals,cash,a
+17,Antigua and Barbuda,Saint John's,,,,world_capitals,cash,a
+18,Argentina,Buenos Aires,,,,world_capitals,cash,a
+19,Armenia,Yerevan,,,,world_capitals,cash,a
+20,Aruba,Oranjestad,,,,world_capitals,cash,a
+21,Australia,Canberra,,,,world_capitals,cash,a
+22,Austria,Vienna,,,,world_capitals,cash,a
+23,Azerbaijan,Baku,,,,world_capitals,cash,a
+24,Bahamas,Nassau,,,,world_capitals,cash,a
+25,Bahrain,Manama,,,,world_capitals,cash,a
+26,Bangladesh,Dhaka,,,,world_capitals,cash,a
+27,Barbados,Bridgetown,,,,world_capitals,cash,a
+28,Belarus,Minsk,,,,world_capitals,cash,a
+29,Belgium,Brussels,,,,world_capitals,cash,a
+30,Belize,Belmopan,,,,world_capitals,cash,a
+31,Benin,Porto-Novo,,,,world_capitals,cash,a
+32,Bermuda,Hamilton,,,,world_capitals,cash,a
+33,Bhutan,Thimphu,,,,world_capitals,cash,a
+34,Bolivia,La Paz,,,,world_capitals,cash,a
+35,Bosnia and Herzegovina,Sarajevo,,,,world_capitals,cash,a
+36,Botswana,Gaborone,,,,world_capitals,cash,a
+37,Brazil,Brasilia,,,,world_capitals,cash,a
+38,British Virgin Islands,Road Town,,,,world_capitals,cash,a
+39,Brunei Darussalam,Bandar Seri Begawan,,,,world_capitals,cash,a
+40,Bulgaria,Sofia,,,,world_capitals,cash,a
+41,Burkina Faso,Ouagadougou,,,,world_capitals,cash,a
+42,Myanmar,Rangoon,,,,world_capitals,cash,a
+43,Burundi,Bujumbura,,,,world_capitals,cash,a
+44,Cambodia,Phnom Penh,,,,world_capitals,cash,a
+45,Cameroon,Yaounde,,,,world_capitals,cash,a
+46,Canada,Ottawa,,,,world_capitals,cash,a
+47,Cape Verde,Praia,,,,world_capitals,cash,a
+48,Cayman Islands,George Town,,,,world_capitals,cash,a
+49,Central African Republic,Bangui,,,,world_capitals,cash,a
+50,Chad,N'Djamena,,,,world_capitals,cash,a
+51,Chile,Santiago,,,,world_capitals,cash,a
+52,China,Beijing,,,,world_capitals,cash,a
+53,Christmas Island,The Settlement,,,,world_capitals,cash,a
+54,Cocos Islands,West Island,,,,world_capitals,cash,a
+55,Colombia,Bogota,,,,world_capitals,cash,a
+56,Comoros,Moroni,,,,world_capitals,cash,a
+57,Democratic Republic of the Congo,Kinshasa,,,,world_capitals,cash,a
+58,Republic of Congo,Brazzaville,,,,world_capitals,cash,a
+59,Cook Islands,Avarua,,,,world_capitals,cash,a
+60,Costa Rica,San Jose,,,,world_capitals,cash,a
+61,Cote d'Ivoire,Yamoussoukro,,,,world_capitals,cash,a
+62,Croatia,Zagreb,,,,world_capitals,cash,a
+63,Cuba,Havana,,,,world_capitals,cash,a
+64,Curaçao,Willemstad,,,,world_capitals,cash,a
+65,Cyprus,Nicosia,,,,world_capitals,cash,a
+66,Czech Republic,Prague,,,,world_capitals,cash,a
+67,Denmark,Copenhagen,,,,world_capitals,cash,a
+68,Djibouti,Djibouti,,,,world_capitals,cash,a
+69,Dominica,Roseau,,,,world_capitals,cash,a
+70,Dominican Republic,Santo Domingo,,,,world_capitals,cash,a
+71,Ecuador,Quito,,,,world_capitals,cash,a
+72,Egypt,Cairo,,,,world_capitals,cash,a
+73,El Salvador,San Salvador,,,,world_capitals,cash,a
+74,Equatorial Guinea,Malabo,,,,world_capitals,cash,a
+75,Eritrea,Asmara,,,,world_capitals,cash,a
+76,Estonia,Tallinn,,,,world_capitals,cash,a
+77,Ethiopia,Addis Ababa,,,,world_capitals,cash,a
+78,Falkland Islands,Stanley,,,,world_capitals,cash,a
+79,Faroe Islands,Torshavn,,,,world_capitals,cash,a
+80,Fiji,Suva,,,,world_capitals,cash,a
+81,Finland,Helsinki,,,,world_capitals,cash,a
+82,France,Paris,,,,world_capitals,cash,a
+83,French Polynesia,Papeete,,,,world_capitals,cash,a
+84,Gabon,Libreville,,,,world_capitals,cash,a
+85,The Gambia,Banjul,,,,world_capitals,cash,a
+86,Georgia,Tbilisi,,,,world_capitals,cash,a
+87,Germany,Berlin,,,,world_capitals,cash,a
+88,Ghana,Accra,,,,world_capitals,cash,a
+89,Gibraltar,Gibraltar,,,,world_capitals,cash,a
+90,Greece,Athens,,,,world_capitals,cash,a
+91,Greenland,Nuuk,,,,world_capitals,cash,a
+92,Grenada,Saint George's,,,,world_capitals,cash,a
+93,Guam,Hagatna,,,,world_capitals,cash,a
+94,Guatemala,Guatemala City,,,,world_capitals,cash,a
+95,Guernsey,Saint Peter Port,,,,world_capitals,cash,a
+96,Guinea,Conakry,,,,world_capitals,cash,a
+97,Guinea-Bissau,Bissau,,,,world_capitals,cash,a
+98,Guyana,Georgetown,,,,world_capitals,cash,a
+99,Haiti,Port-au-Prince,,,,world_capitals,cash,a
+100,Vatican City,Vatican City,,,,world_capitals,cash,a
+101,Honduras,Tegucigalpa,,,,world_capitals,cash,a
+102,Hungary,Budapest,,,,world_capitals,cash,a
+103,Iceland,Reykjavik,,,,world_capitals,cash,a
+104,India,New Delhi,,,,world_capitals,cash,a
+105,Indonesia,Jakarta,,,,world_capitals,cash,a
+106,Iran,Tehran,,,,world_capitals,cash,a
+107,Iraq,Baghdad,,,,world_capitals,cash,a
+108,Ireland,Dublin,,,,world_capitals,cash,a
+109,Isle of Man,Douglas,,,,world_capitals,cash,a
+110,Israel,Jerusalem,,,,world_capitals,cash,a
+111,Italy,Rome,,,,world_capitals,cash,a
+112,Jamaica,Kingston,,,,world_capitals,cash,a
+113,Japan,Tokyo,,,,world_capitals,cash,a
+114,Jersey,Saint Helier,,,,world_capitals,cash,a
+115,Jordan,Amman,,,,world_capitals,cash,a
+116,Kazakhstan,Astana,,,,world_capitals,cash,a
+117,Kenya,Nairobi,,,,world_capitals,cash,a
+118,Kiribati,Tarawa,,,,world_capitals,cash,a
+119,North Korea,Pyongyang,,,,world_capitals,cash,a
+120,South Korea,Seoul,,,,world_capitals,cash,a
+121,Kosovo,Pristina,,,,world_capitals,cash,a
+122,Kuwait,Kuwait City,,,,world_capitals,cash,a
+123,Kyrgyzstan,Bishkek,,,,world_capitals,cash,a
+124,Laos,Vientiane,,,,world_capitals,cash,a
+125,Latvia,Riga,,,,world_capitals,cash,a
+126,Lebanon,Beirut,,,,world_capitals,cash,a
+127,Lesotho,Maseru,,,,world_capitals,cash,a
+128,Liberia,Monrovia,,,,world_capitals,cash,a
+129,Libya,Tripoli,,,,world_capitals,cash,a
+130,Liechtenstein,Vaduz,,,,world_capitals,cash,a
+131,Lithuania,Vilnius,,,,world_capitals,cash,a
+132,Luxembourg,Luxembourg,,,,world_capitals,cash,a
+133,Macedonia,Skopje,,,,world_capitals,cash,a
+134,Madagascar,Antananarivo,,,,world_capitals,cash,a
+135,Malawi,Lilongwe,,,,world_capitals,cash,a
+136,Malaysia,Kuala Lumpur,,,,world_capitals,cash,a
+137,Maldives,Male,,,,world_capitals,cash,a
+138,Mali,Bamako,,,,world_capitals,cash,a
+139,Malta,Valletta,,,,world_capitals,cash,a
+140,Marshall Islands,Majuro,,,,world_capitals,cash,a
+141,Mauritania,Nouakchott,,,,world_capitals,cash,a
+142,Mauritius,Port Louis,,,,world_capitals,cash,a
+143,Mexico,Mexico City,,,,world_capitals,cash,a
+144,Federated States of Micronesia,Palikir,,,,world_capitals,cash,a
+145,Moldova,Chisinau,,,,world_capitals,cash,a
+146,Monaco,Monaco,,,,world_capitals,cash,a
+147,Mongolia,Ulaanbaatar,,,,world_capitals,cash,a
+148,Montenegro,Podgorica,,,,world_capitals,cash,a
+149,Montserrat,Plymouth,,,,world_capitals,cash,a
+150,Morocco,Rabat,,,,world_capitals,cash,a
+151,Mozambique,Maputo,,,,world_capitals,cash,a
+152,Namibia,Windhoek,,,,world_capitals,cash,a
+153,Nepal,Kathmandu,,,,world_capitals,cash,a
+154,Netherlands,Amsterdam,,,,world_capitals,cash,a
+155,New Caledonia,Noumea,,,,world_capitals,cash,a
+156,New Zealand,Wellington,,,,world_capitals,cash,a
+157,Nicaragua,Managua,,,,world_capitals,cash,a
+158,Niger,Niamey,,,,world_capitals,cash,a
+159,Nigeria,Abuja,,,,world_capitals,cash,a
+160,Niue,Alofi,,,,world_capitals,cash,a
+161,Norfolk Island,Kingston,,,,world_capitals,cash,a
+162,Northern Mariana Islands,Saipan,,,,world_capitals,cash,a
+163,Norway,Oslo,,,,world_capitals,cash,a
+164,Oman,Muscat,,,,world_capitals,cash,a
+165,Pakistan,Islamabad,,,,world_capitals,cash,a
+166,Palau,Melekeok,,,,world_capitals,cash,a
+167,Panama,Panama City,,,,world_capitals,cash,a
+168,Papua New Guinea,Port Moresby,,,,world_capitals,cash,a
+169,Paraguay,Asuncion,,,,world_capitals,cash,a
+170,Peru,Lima,,,,world_capitals,cash,a
+171,Philippines,Manila,,,,world_capitals,cash,a
+172,Pitcairn Islands,Adamstown,,,,world_capitals,cash,a
+173,Poland,Warsaw,,,,world_capitals,cash,a
+174,Portugal,Lisbon,,,,world_capitals,cash,a
+175,Puerto Rico,San Juan,,,,world_capitals,cash,a
+176,Qatar,Doha,,,,world_capitals,cash,a
+177,Romania,Bucharest,,,,world_capitals,cash,a
+178,Russia,Moscow,,,,world_capitals,cash,a
+179,Rwanda,Kigali,,,,world_capitals,cash,a
+180,Saint Barthelemy,Gustavia,,,,world_capitals,cash,a
+181,Saint Helena,Jamestown,,,,world_capitals,cash,a
+182,Saint Kitts and Nevis,Basseterre,,,,world_capitals,cash,a
+183,Saint Lucia,Castries,,,,world_capitals,cash,a
+184,Saint Pierre and Miquelon,Saint-Pierre,,,,world_capitals,cash,a
+185,Saint Vincent and the Grenadines,Kingstown,,,,world_capitals,cash,a
+186,Samoa,Apia,,,,world_capitals,cash,a
+187,San Marino,San Marino,,,,world_capitals,cash,a
+188,Sao Tome and Principe,Sao Tome,,,,world_capitals,cash,a
+189,Saudi Arabia,Riyadh,,,,world_capitals,cash,a
+190,Senegal,Dakar,,,,world_capitals,cash,a
+191,Serbia,Belgrade,,,,world_capitals,cash,a
+192,Seychelles,Victoria,,,,world_capitals,cash,a
+193,Sierra Leone,Freetown,,,,world_capitals,cash,a
+194,Singapore,Singapore,,,,world_capitals,cash,a
+195,Sint Maarten,Philipsburg,,,,world_capitals,cash,a
+196,Slovakia,Bratislava,,,,world_capitals,cash,a
+197,Slovenia,Ljubljana,,,,world_capitals,cash,a
+198,Solomon Islands,Honiara,,,,world_capitals,cash,a
+199,Somalia,Mogadishu,,,,world_capitals,cash,a
+200,South Africa,Pretoria,,,,world_capitals,cash,a
+201,South Sudan,Juba,,,,world_capitals,cash,a
+202,Spain,Madrid,,,,world_capitals,cash,a
+203,Sri Lanka,Colombo,,,,world_capitals,cash,a
+204,Sudan,Khartoum,,,,world_capitals,cash,a
+205,Suriname,Paramaribo,,,,world_capitals,cash,a
+206,Svalbard,Longyearbyen,,,,world_capitals,cash,a
+207,Swaziland,Mbabane,,,,world_capitals,cash,a
+208,Sweden,Stockholm,,,,world_capitals,cash,a
+209,Switzerland,Bern,,,,world_capitals,cash,a
+210,Syria,Damascus,,,,world_capitals,cash,a
+211,Taiwan,Taipei,,,,world_capitals,cash,a
+212,Tajikistan,Dushanbe,,,,world_capitals,cash,a
+213,Tanzania,Dar es Salaam,,,,world_capitals,cash,a
+214,Thailand,Bangkok,,,,world_capitals,cash,a
+215,Timor-Leste,Dili,,,,world_capitals,cash,a
+216,Togo,Lome,,,,world_capitals,cash,a
+217,Tonga,Nuku'alofa,,,,world_capitals,cash,a
+218,Trinidad and Tobago,Port of Spain,,,,world_capitals,cash,a
+219,Tunisia,Tunis,,,,world_capitals,cash,a
+220,Turkey,Ankara,,,,world_capitals,cash,a
+221,Turkmenistan,Ashgabat,,,,world_capitals,cash,a
+222,Turks and Caicos Islands,Grand Turk,,,,world_capitals,cash,a
+223,Tuvalu,Funafuti,,,,world_capitals,cash,a
+224,Uganda,Kampala,,,,world_capitals,cash,a
+225,Ukraine,Kyiv,,,,world_capitals,cash,a
+226,United Arab Emirates,Abu Dhabi,,,,world_capitals,cash,a
+227,United Kingdom,London,,,,world_capitals,cash,a
+228,United States,Washington,,,,world_capitals,cash,a
+229,Uruguay,Montevideo,,,,world_capitals,cash,a
+230,Uzbekistan,Tashkent,,,,world_capitals,cash,a
+231,Vanuatu,Port-Vila,,,,world_capitals,cash,a
+232,Venezuela,Caracas,,,,world_capitals,cash,a
+233,Vietnam,Hanoi,,,,world_capitals,cash,a
+234,US Virgin Islands,Charlotte Amalie,,,,world_capitals,cash,a
+235,Wallis and Futuna,Mata-Utu,,,,world_capitals,cash,a
+236,Yemen,Sanaa,,,,world_capitals,cash,a
+237,Zambia,Lusaka,,,,world_capitals,cash,a
+238,Zimbabwe,Harare,,,,world_capitals,cash,a
+239,US Minor Outlying Islands,Washington,,,,world_capitals,cash,a
+241,Northern Cyprus,North Nicosia,,,,world_capitals,cash,a
+244,British Indian Ocean Territory,Diego Garcia,,,,world_capitals,cash,a
