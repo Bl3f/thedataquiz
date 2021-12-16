@@ -1,0 +1,6 @@
+id,text,a,b,c,d,tags,question_type,answer
+1,What's France capital?,Paris,,,,world_capitals,cash,a
+2,What's Italy capital?,Rome,,,,world_capitals,cash,a
+3,What's Germany capital?,Berlin,,,,world_capitals,cash,a
+4,What's United Kingdom capital?,London,,,,world_capitals,cash,a
+5,What's Spain capital?,Madrid,,,,world_capitals,cash,a

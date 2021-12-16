@@ -12,12 +12,19 @@ class CreateQuestionForm(forms.ModelForm):
 class CreateQuizForm(forms.ModelForm):
     class Meta:
         model = Quiz
-        fields = ["size"]
+        fields = ["size", "tag"]
 
 
-class OneAnswer(forms.Form):
+class OneAnswerQCM(forms.Form):
     answer = forms.ChoiceField(widget=forms.RadioSelect)
 
     def __init__(self, choices, *args, **kwargs):
-        super(OneAnswer, self).__init__(*args, **kwargs)
+        super(OneAnswerQCM, self).__init__(*args, **kwargs)
         self.fields["answer"].choices = choices
+
+
+class OneAnswerCash(forms.Form):
+    answer = forms.CharField(max_length=64)
+
+    def __init__(self, choices, *args, **kwargs):
+        super(OneAnswerCash, self).__init__(*args, **kwargs)

@@ -3,8 +3,15 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 
-from .forms import CreateQuestionForm, CreateQuizForm, OneAnswer
-from .models import Question, Quiz, QuestionAnswered, answers
+from .forms import CreateQuestionForm, CreateQuizForm, OneAnswerQCM, OneAnswerCash
+from .models import Question, Quiz, QuestionAnswered, answers, QCM, CASH
+
+
+def get_answer_form(question):
+    if question.question_type == QCM:
+        return OneAnswerQCM
+    elif question.question_type == CASH:
+        return OneAnswerCash
 
 
 def index(request):
@@ -32,11 +39,13 @@ def quiz_create(request):
 
         if form.is_valid():
             size = form.cleaned_data["size"]
-            random_questions = Question.objects.sample(size)
+            tag = form.cleaned_data["tag"]
+            random_questions = Question.objects.sample(size, tag=tag)
 
             quiz = Quiz(
                 size=size,
                 user=request.user,
+                tag=tag,
             )
 
             quiz.save()
@@ -63,6 +72,10 @@ def quiz_play(request, pk):
     already_answered_count = quiz.size - not_answered_count
 
     if not_answered_count == 0:
+        if not quiz.completed:
+            quiz.completed = True
+            quiz.save()
+
         context = {
             "quiz": quiz,
             "score": quiz.score,
@@ -72,19 +85,26 @@ def quiz_play(request, pk):
 
     current_question = not_answered_questions.all().order_by("order").first()
     choices = [(name, current_question.question.__getattribute__(name)) for name, _ in answers]
+    form_class = get_answer_form(current_question.question)
 
     if request.method == "POST":
-        form = OneAnswer(choices, request.POST)
+        form = form_class(choices, request.POST)
 
         if form.is_valid():
             answer_given = form.cleaned_data.get("answer")
-            current_question.user_answer = answer_given
-            current_question.is_correct = (answer_given == current_question.question.answer)
-            current_question.save()
+            print(answer_given)
+            if current_question.question.question_type == QCM:
+                current_question.user_answer = answer_given
+                current_question.is_correct = (answer_given == current_question.question.answer)
+                current_question.save()
+            elif current_question.question.question_type == CASH:
+                current_question.user_answer = answer_given
+                current_question.is_correct = (answer_given.lower() == current_question.question.__getattribute__(current_question.question.answer).lower())
+                current_question.save()
             return redirect("quiz-play", pk=pk)
     else:
 
-        form = OneAnswer(choices)
+        form = form_class(choices)
 
     context = {
         "quiz": quiz,

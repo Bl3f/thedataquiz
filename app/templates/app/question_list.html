@@ -10,7 +10,7 @@
             <td>Réponse B</td>
             <td>Réponse C</td>
             <td>Réponse D</td>
-            <td>Updated at</td>
+            <td>Tags</td>
             <td>Opérations</td>
         </tr>
         </thead>
@@ -22,7 +22,7 @@
                 <td class="{% if question.answer == 'b' %}correct{% endif %}">{{ question.b }}</td>
                 <td class="{% if question.answer == 'c' %}correct{% endif %}">{{ question.c }}</td>
                 <td class="{% if question.answer == 'd' %}correct{% endif %}">{{ question.d }}</td>
-                <td>{{ question.updated_at }}</td>
+                <td>{% for tag in question.tags.all %}{{ tag.slug }}{% endfor %}</td>
                 <td><a href="{% url 'question-edit' question.pk %}">edit</a> - <a href="{% url 'question-delete' question.pk %}">delete</a></td>
             </tr>
         {% endfor %}
