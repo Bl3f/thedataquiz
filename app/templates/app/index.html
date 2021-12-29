@@ -1,15 +1,24 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Index{% endblock %}
 
 {% block content %}
-    <div>Hello on this super Quizz. We have {{ nb_questions }} <a href="{% url 'question-list' %}">questions</a> in the database.</div>
-    <h2>Add a question</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ create_question_form.as_p }}
-        <button type="submit">Add</button>
-    </form>
+    <div class="hero">
+        <div class="left"><img src="{% static 'app/img/fun.png' %}" alt="a fun image"></div>
+        <div class="right">
+            <p>Welcome on the data quiz app. It's free and very fun.</p>
+            <p>We have {{ nb_questions }} <a href="{% url 'question-list' %}">questions</a> in the database.</p>
+        </div>
+    </div>
+    <div class="add-question">
+        <h5>Add a question</h5>
+        <form method="post">
+            {% csrf_token %}
+            {{ create_question_form.as_p }}
+            <button type="submit">Add</button>
+        </form>
+    </div>
 
     <h2>Take a quiz</h2>
     <a href="{% url "quiz-create" %}"><button>Create a quiz</button></a>

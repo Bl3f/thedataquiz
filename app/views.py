@@ -108,7 +108,7 @@ def quiz_play(request, pk):
 
     context = {
         "quiz": quiz,
-        "already_answered_count": already_answered_count,
+        "question_number": already_answered_count + 1,
         "current_question": current_question,
         "form": form
     }

@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Let's do a quiz</h1>
     <div>
-        <p>You've started a quiz. You have answered {{ already_answered_count }} / {{ quiz.size }} question.</p>
-        <p>{{ current_question.question.text }}</p>
+        <div class="questionNumber round"><b>Question</b> {{ question_number }} sur {{ quiz.size }}</div>
+        <div class="question">{{ current_question.question.text }}</div>
         <form method="post">{% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit" value="Validate">
+            {{ form }}
+            <input class="round round-primary" type="submit" value="Validate">
         </form>
     </div>
 {% endblock %}

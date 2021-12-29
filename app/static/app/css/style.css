@@ -1,6 +1,11 @@
 body, html {
     padding: 0;
     margin: 0;
+    background-color: #F5F5FF;
+}
+
+body {
+    position: relative;
 }
 
 .correct {
@@ -9,4 +14,162 @@ body, html {
 
 .incorrect {
     color: red;
+}
+
+header {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    -webkit-box-shadow: -2px 5px 15px 5px rgba(0,0,0,0.08);
+    box-shadow: -2px 5px 15px 5px rgba(0,0,0,0.08);
+    line-height: 60px;
+    z-index: 1;
+}
+
+.title {
+    font-family: "Bebas Neue";
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+nav {
+    float: right;
+    margin-right: 30px;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.hero {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-question {
+    background-color: #b2bec3;
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin: 20px 0;
+}
+
+.round, input[type="submit"].round {
+    display: inherit;
+    width: 200px;
+    height: 40px;
+    background-color: #717AEE;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    border: 0;
+    margin: auto;
+}
+
+.round-primary, input[type="submit"].round-primary {
+    background-color: transparent;
+    border: 2px solid #717AEE;
+    box-sizing: border-box;
+    color: #717AEE;
+    line-height: 36px;
+    width: inherit;
+}
+
+.round-primary:hover, input[type="submit"].round-primary:hover {
+    background-color: #717AEE;
+    color: white;
+}
+
+.questionNumber {
+    position: relative;
+    margin: auto;
+    z-index: 32;
+}
+
+.question {
+    position: relative;
+    z-index: 16;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5F6;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    margin-top: -20px;
+    border-radius: 4px;
+}
+
+.fieldWrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.fieldWrapper input {
+    border: 1px solid #E5E5F6;
+    width: 100%;
+    text-align: center;
+}
+
+.fieldWrapper input::placeholder {
+    color: #AAA;
+}
+
+.fieldWrapper input:focus {
+    border: 1px solid #969BD6;
+}
+
+.qcm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qcm label {
+    cursor: pointer;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: center;
+    margin-bottom: 10px;
+}
+
+.qcm .wrapper {
+    padding-right: 5px;
+}
+
+.qcm label:nth-child(even) .wrapper {
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.qcm input {
+    display: none;
+}
+
+.qcm span {
+    border: 1px solid #E5E5F6;
+    box-sizing: border-box;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.qcm input:checked + span {
+    border: 1px solid #969BD6;
+    background-color: #E8E9FE;
+    color: #7B81DF;
 }
