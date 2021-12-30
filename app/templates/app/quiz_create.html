@@ -2,15 +2,23 @@
 
 {% block content %}
     <div>
-    <ul>
+    <h3>
+    Quiz already created
+    </h3>
     {% for quiz in data %}
-        <li><a href="{% url 'quiz-play' quiz.pk %}">Random — {{ quiz.size }} questions from {{ quiz.tag }}{% if quiz.completed %}— ✓{% endif %}</a></li>
+        <a href="{% url 'quiz-play' quiz.pk %}" class="quizCard {% if quiz.completed %}completed{% endif %}">
+            <span class="background">{{ quiz.tag.emoji }}</span>
+            <span class="size">{{ quiz.size }} questions</span>
+            <span class="score">{% if quiz.completed %}Finished. {{ quiz.score }}%.{% endif %}</span>
+        </a>
     {% endfor %}
-    </ul>
     </div>
 
-    <form method="post">{% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Create">
-    </form>
+    <div>
+        <h3>Create a quiz</h3>
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Create">
+        </form>
+    </div>
 {% endblock %}

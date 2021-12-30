@@ -173,3 +173,48 @@ nav {
     background-color: #E8E9FE;
     color: #7B81DF;
 }
+
+.quizCard {
+    position: relative;
+    background-color: white;
+    border: 1px solid #969BD6;
+    border-radius: 4px;
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    margin: 10px;
+    overflow: hidden;
+    color: initial;
+    text-decoration: none;
+}
+
+.quizCard.completed {
+    filter: grayscale(1);
+}
+
+.quizCard:hover {
+    filter: grayscale(0);
+    color: initial;
+    font-weight: bold;
+}
+
+.quizCard .background {
+    position: absolute;
+    font-size: 40px;
+    bottom: -10px;
+    right: 5px;
+}
+
+.quizCard .size {
+    font-size: .8em;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: block;
+}
+
+.quizCard .score {
+    font-size: .7em;
+    padding-left: 10px;
+    display: block;
+}

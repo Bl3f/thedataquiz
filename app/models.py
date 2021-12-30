@@ -18,9 +18,10 @@ question_types = [(QCM, QCM), (CASH, CASH)]
 class Tag(models.Model):
     slug = models.CharField(max_length=32)
     display = models.CharField(max_length=64)
+    emoji = models.CharField(max_length=4, null=True, blank=True)
 
     def __str__(self):
-        return self.display
+        return f"{self.emoji} {self.display}"
 
 
 class QuestionManager(models.Manager):
