@@ -1,27 +1,37 @@
 {% load static %}
+{% load compress %}
 
 <html>
 <head>
     <title>{% block title %}{% endblock %}</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,400,700" rel="stylesheet">
+{#    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">#}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
+
+
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static "app/css/main.scss" %}" />
+    {% endcompress %}
 </head>
 <body>
-    <header>
-        <a href="{% url "index" %}" class="title">THE DATA QUIZ</a>
-        <nav>
-            <span>{{ user }}</span>
-            <span>—</span>
-            {% if user.is_authenticated %}
-                <span><a href="{% url "logout" %}">logout</a></span>
-            {% else %}
-                <span><a href="{% url "login" %}">login</a></span>
-                <span><a href="{% url "register" %}">register</a></span>
-            {% endif %}
-        </nav>
-    </header>
+    {% block header %}
+        <header>
+            <a href="{% url "index" %}" class="title"><img src="{% static "app/img/dice.png" %}" alt="">The Big Quiz</a>
+            <nav>
+                <span><a href="{% url "quiz-create" %}">Take a quiz</a></span>
+                <span><a href="{% url "question-add" %}">Add questions</a></span>
+                <span><a href="{% url "question-list" %}">Questions</a></span>
+                {% if user.is_authenticated %}
+                    <span>{{ user }}</span>
+                    <span><a href="{% url "logout" %}">logout</a></span>
+                {% else %}
+                    <span><a href="{% url "login" %}">login</a></span>
+                    <span><a href="{% url "register" %}">register</a></span>
+                {% endif %}
+            </nav>
+        </header>
+    {% endblock %}
     <div>
         <div class="container">
             <div class="content">

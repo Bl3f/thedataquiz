@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div>
+    <div class="quizPlaying">
         <div class="questionNumber round"><b>Question</b> {{ question_number }} sur {{ quiz.size }}</div>
         <div class="question">{{ current_question.question.text }}</div>
         <form method="post">{% csrf_token %}

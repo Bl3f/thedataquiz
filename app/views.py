@@ -116,6 +116,15 @@ def quiz_play(request, pk):
     return render(request, template_name="app/quiz_play.html", context=context)
 
 
+def leaderboard(request):
+    return render(request, template_name="app/leaderboard.html")
+
+
+class CreateQuestionsView(CreateView):
+    model = Question
+    fields = "__all__"
+
+
 class ListQuestionsView(ListView):
     model = Question
 
