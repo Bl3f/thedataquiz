@@ -1,3 +1,4 @@
 Django==4.0
 django-libsass==0.9
 django_compressor
+psycopg2
