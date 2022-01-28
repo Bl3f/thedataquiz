@@ -48,5 +48,4 @@ jobs:
 
       - name: Build and Push container
         run: |-
-          docker build -t gcr.io/"moonlit-palace-338110"/octochat:${{ github.sha }} .
-          docker push gcr.io/"moonlit-palace-338110"/$octochat:${{ github.sha }}
+          docker ps -t gcr.io/"moonlit-palace-338110"/octochat:${{ github.sha }}
