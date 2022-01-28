@@ -62,7 +62,7 @@ def quiz_create(request):
     else:
         form = CreateQuizForm()
 
-    return render(request, template_name="app/quiz_create.html", context={"form": form, "data": Quiz.objects.all().order_by('-updated_at')[:20]})
+    return render(request, template_name="app/quiz_create.html", context={"form": form, "data": Quiz.objects.filter(user=request.user).all().order_by('-updated_at')[:20]})
 
 
 def quiz_play(request, pk):
