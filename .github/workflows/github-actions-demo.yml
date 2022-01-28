@@ -40,7 +40,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v0.2.0 
         with:
           project_id: "moonlit-palace-338110"
-          service_account_key: ${{ secrets.GCP_CREDDENTIALS }}
+          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
 
       - name: Authorize Docker push
