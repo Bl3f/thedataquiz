@@ -51,4 +51,4 @@ jobs:
       - name: Update image
         run: |-
           gcloud --quiet beta compute ssh --zone "europe-west1-b" "quiz-app" --project "moonlit-palace-338110" \
-          -- docker stop "swerdeste/thedataquiz" & docker rm "swerdeste/thedataquiz" & docker pull swerdeste/thedataquiz:latest & docker run -d --net=host -e POSTGRES_HOST=104.155.102.208 -e POSTGRES_USER=app -e POSTGRES_DB=quiz -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e HOST_IP=quiz.blef.fr "swerdeste/thedataquiz"
+          -- docker stop "swerdeste/thedataquiz" & docker rm "swerdeste/thedataquiz" & docker pull swerdeste/thedataquiz:latest & docker run -d --net=host -e POSTGRES_HOST=104.155.102.208 -e POSTGRES_USER=app -e POSTGRES_DB=quiz -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e HOST_IP=quiz.blef.fr "swerdeste/thedataquiz" & ./manage.py migrate
