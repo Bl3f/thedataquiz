@@ -32,20 +32,20 @@ jobs:
 
   Deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      
-      - name: Setup Cloud SDK
+    steps:      
+      - name: Login
         uses: google-github-actions/setup-gcloud@v0.2.0 
         with:
           project_id: "moonlit-palace-338110"
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
 
-      - name: Authorize Docker push
-        run: gcloud auth configure-docker
+      - name: Configure Docker
+        run: gcloud auth configure-docker --quiet
 
-      - name: Build and Push container
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Docker ps
         run: |-
-          docker ps -t gcr.io/"moonlit-palace-338110"/octochat:${{ github.sha }}
+          gcloud beta compute ssh --zone "europe-west1-b" "quiz-app"  --project "moonlit-palace-338110" docker ps
