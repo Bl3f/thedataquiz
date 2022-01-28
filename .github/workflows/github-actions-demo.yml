@@ -1,6 +1,7 @@
 name: DockerCICD
 on: [push]
 jobs:
+
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
@@ -23,3 +24,24 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true 
+
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Setup Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          project_id: ${{ secrets.GCP_PROJECT }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker
+
+      - name: Build and Push container
+        run: |-
+          docker build -t gcr.io/${{ secrtes.GCP_PROJECT }}/octochat:${{ gihub.sha }} .
+          docker push gcr.io/${{ secrets.GCP_PROJECT }}/$octochat:${{ github.sha }}
