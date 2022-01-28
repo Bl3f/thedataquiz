@@ -2,7 +2,7 @@ name: DockerCICD
 on: [push]
 jobs:
 
-  Explore-GitHub-Actions:
+  Docker:
     runs-on: ubuntu-latest
     steps:
       - 
