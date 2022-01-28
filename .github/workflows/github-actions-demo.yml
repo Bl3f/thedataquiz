@@ -28,6 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true 
+          tags: ceblefari/thedataquiz:latest
 
   Deploy:
     runs-on: ubuntu-latest
