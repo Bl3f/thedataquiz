@@ -46,7 +46,7 @@ jobs:
         run: gcloud auth configure-docker
 
       - name: Build and Push container
-        run: |-
+        run: | -
           docker build -t gcr.io/${{ secrtes.GCP_PROJECT }}/octochat:${{ gihub.sha }} .
           docker push gcr.io/${{ secrets.GCP_PROJECT }}/$octochat:${{ github.sha }}
 
