@@ -48,5 +48,4 @@ jobs:
 
       - name: Docker ps
         run: |-
-          docker ps
-          gcloud --quiet beta compute ssh --zone "europe-west1-b" "quiz-app" --project "moonlit-palace-338110"
+          gcloud --quiet beta compute ssh --zone "europe-west1-b" "quiz-app" --project "moonlit-palace-338110" -- docker ps
