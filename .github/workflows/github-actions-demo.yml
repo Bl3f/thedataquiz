@@ -2,7 +2,7 @@ name: DockerCICD
 on: [push]
 jobs:
 
-  Explore-GitHub-Actions:
+  Docker:
     runs-on: ubuntu-latest
     steps:
       - 
@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true 
-          tags: ceblefari/thedataquiz:latest
+          tags: swerdeste/thedataquiz:latest
 
   Deploy:
     runs-on: ubuntu-latest
