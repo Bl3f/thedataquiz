@@ -28,6 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true 
+          tags: swerdeste/docker:latest
 
   Deploy:
     runs-on: ubuntu-latest
