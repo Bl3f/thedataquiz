@@ -47,6 +47,5 @@ jobs:
 
       - name: Build and Push container
         run: |-
-          docker build -t gcr.io/${{ secrets.GCP_PROJECT }}/octochat:${{ gihub.sha }} .
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT }}/octochat:${{ github.sha }} .
           docker push gcr.io/${{ secrets.GCP_PROJECT }}/$octochat:${{ github.sha }}
-
